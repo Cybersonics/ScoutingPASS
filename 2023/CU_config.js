@@ -75,6 +75,10 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
+    { "name": "Dropped Game Pieces",
+    "code": "adgp",
+    "type": "counter",
+    },
     { "name": "Crossed Cable",
       "code": "acc",
       "type": "bool"
@@ -116,6 +120,10 @@ var config_data = `
       "shape": "circle 12 black red true",
       "cycleTimer": "tct"
     },
+    { "name": "Dropped Game Pieces",
+    "code": "tdgp",
+    "type": "counter",
+    },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "tfc",
       "type": "counter",
@@ -154,22 +162,45 @@ var config_data = `
       "code": "dt",
       "type": "timer"
     },
-    { "name": "Final Status",
-      "code": "fs",
+    { "name": "Charge Station",
+      "code": "cs",
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
-        "d": "Docked (Not Engaged)<br>",
+        "d": "Docked<br>",
         "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "o": "Out of Community"<br>"
       },
-      "defaultValue": "x"
+      "defaultValue": "o"
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
       "type": "counter"
     }
+    { "name": "Links Scored",
+    "code": "ls",
+    "type": "counter"
+    },
+    { "name": "Coopertition Bonus",
+    "code": "cb",
+    "type": "bool"
+  },
+    { "name": "Penalty Points",
+      "code": "pp",
+      "type": "number",
+    },
+    { "name": "Match Result",
+      "code": "mr",
+      "type": "radio"
+      "choices": {
+        "w": "Won<br>",
+        "l": "Lost<br>",
+      }
+    },
+    { "name": "Total Score",
+      "code": "ts",
+      "type": "number",
+    },
   ],
   "postmatch": [
     { "name": "Driver Skill",
@@ -183,10 +214,6 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Links Scored",
-      "code": "ls",
-      "type": "counter"
-    },
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
@@ -199,32 +226,12 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Swerve drive?",
-      "code": "sd",
-      "type": "bool"
-    },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
-    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Cones (>2)",
-      "code": "dc",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
