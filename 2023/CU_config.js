@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022carv",
+      "defaultValue": "2023pahat",
       "required": "true",
       "disabled": "true"
     },
@@ -75,6 +75,10 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
+    { "name": "Dropped Game Pieces",
+    "code": "adgp",
+    "type": "counter",
+    },
     { "name": "Crossed Cable",
       "code": "acc",
       "type": "bool"
@@ -115,6 +119,10 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true",
       "cycleTimer": "tct"
+    },
+    { "name": "Dropped Game Pieces",
+    "code": "tdgp",
+    "type": "counter",
     },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "tfc",
@@ -170,6 +178,30 @@ var config_data = `
       "code": "dn",
       "type": "counter"
     }
+    { "name": "Links Scored",
+    "code": "ls",
+    "type": "counter"
+    },
+    { "name": "Coopertition Bonus",
+    "code": "cb",
+    "type": "bool"
+  },
+    { "name": "Penalty Points",
+      "code": "pp",
+      "type": "match",
+      "min": 1,
+      "max": 100,
+      "required": "true"
+    },
+    { "name": "Match Result",
+      "code": "mr",
+      "type": "radio"
+      "choices": {
+        "w": "Won<br>",
+        "l": "Lost<br>",
+      }
+      
+    },
   ],
   "postmatch": [
     { "name": "Driver Skill",
@@ -182,10 +214,6 @@ var config_data = `
         "x": "Not Observed"
       },
       "defaultValue": "x"
-    },
-    { "name": "Links Scored",
-      "code": "ls",
-      "type": "counter"
     },
     { "name": "Defense Rating",
       "code": "dr",
@@ -221,10 +249,6 @@ var config_data = `
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Cones (>2)",
-      "code": "dc",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
