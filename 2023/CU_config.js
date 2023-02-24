@@ -162,17 +162,16 @@ var config_data = `
       "code": "dt",
       "type": "timer"
     },
-    { "name": "Final Status",
-      "code": "fs",
+    { "name": "Charge Station",
+      "code": "cs",
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
-        "d": "Docked (Not Engaged)<br>",
+        "d": "Docked<br>",
         "e": "Engaged<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "o": "Out of Community"<br>"
       },
-      "defaultValue": "x"
+      "defaultValue": "o"
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
@@ -188,10 +187,7 @@ var config_data = `
   },
     { "name": "Penalty Points",
       "code": "pp",
-      "type": "match",
-      "min": 1,
-      "max": 100,
-      "required": "true"
+      "type": "number",
     },
     { "name": "Match Result",
       "code": "mr",
@@ -200,7 +196,10 @@ var config_data = `
         "w": "Won<br>",
         "l": "Lost<br>",
       }
-      
+    },
+    { "name": "Total Score",
+      "code": "ts",
+      "type": "number",
     },
   ],
   "postmatch": [
@@ -226,22 +225,6 @@ var config_data = `
         "x": "Did not play defense"
       },
       "defaultValue": "x"
-    },
-    { "name": "Swerve drive?",
-      "code": "sd",
-      "type": "bool"
-    },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
       "code": "die",
