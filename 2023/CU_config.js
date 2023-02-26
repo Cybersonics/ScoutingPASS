@@ -169,14 +169,14 @@ var config_data = `
         "p": "Parked<br>",
         "d": "Docked<br>",
         "e": "Engaged<br>",
-        "o": "Out of Community"<br>"
+        "o": "Out of Community<br>"
       },
       "defaultValue": "o"
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
       "type": "counter"
-    }
+    },
     { "name": "Links Scored",
     "code": "ls",
     "type": "counter"
@@ -187,20 +187,20 @@ var config_data = `
   },
     { "name": "Penalty Points",
       "code": "pp",
-      "type": "number",
+      "type": "number"
     },
     { "name": "Match Result",
       "code": "mr",
-      "type": "radio"
+      "type": "radio",
       "choices": {
         "w": "Won<br>",
-        "l": "Lost<br>",
+        "l": "Lost<br>"
       }
     },
     { "name": "Total Score",
       "code": "ts",
       "type": "number"
-    },
+    }
   ],
   "postmatch": [
     { "name": "Driver Skill",
