@@ -76,8 +76,8 @@ var config_data = `
       "shape": "circle 12 black red true"
     },
     { "name": "Dropped Game Pieces",
-    "code": "adgp",
-    "type": "counter",
+      "code": "adgp",
+      "type": "counter"
     },
     { "name": "Crossed Cable",
       "code": "acc",
@@ -122,7 +122,7 @@ var config_data = `
     },
     { "name": "Dropped Game Pieces",
     "code": "tdgp",
-    "type": "counter",
+    "type": "counter"
     },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "tfc",
@@ -199,7 +199,7 @@ var config_data = `
     },
     { "name": "Total Score",
       "code": "ts",
-      "type": "number",
+      "type": "number"
     },
   ],
   "postmatch": [
