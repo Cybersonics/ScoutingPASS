@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022carv",
+      "defaultValue": "2023pahat",
       "required": "true",
       "disabled": "true"
     },
@@ -124,15 +124,6 @@ var config_data = `
     "code": "tdgp",
     "type": "counter"
     },
-    { "name": "Feeder Count<br>(Fed another bot)",
-      "code": "tfc",
-      "type": "counter",
-      "cycleTimer": "tct"
-    },
-    { "name": "Was Fed<br>Game Pieces",
-      "code": "wf",
-      "type": "bool"
-    },
     { "name": "Was Defended",
       "code": "wd",
       "type": "bool"
@@ -140,21 +131,6 @@ var config_data = `
     { "name": "Who Defended this bot",
       "code": "who",
       "type": "text"
-    },
-    { "name": "Smart Placement<br>(creates Links)",
-      "code": "lnk",
-      "type": "bool"
-    },
-    { "name": "Floor Pickup",
-      "code": "fpu",
-      "type": "radio",
-      "choices": {
-        "o": "Cones<br>",
-        "u": "Cubes<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
     }
   ],
   "endgame": [
