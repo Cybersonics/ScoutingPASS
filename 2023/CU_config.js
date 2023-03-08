@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022pahat",
+      "defaultValue": "2023paphit",
       "required": "true",
       "disabled": "true"
     },
@@ -157,8 +157,8 @@ var config_data = `
     "code": "ls",
     "type": "counter"
     },
-    { "name": "Coopertition Bonus",
-    "code": "cb",
+    { "name": "Co-op Grid",
+    "code": "cg",
     "type": "bool"
   },
     { "name": "Penalty Points",
